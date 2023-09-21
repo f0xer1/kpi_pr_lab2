@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #e3e9f7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #2b2626;
+    border-bottom: 2px solid #ff6600;
+}
+
+.header_text {
+    color: #e3e9f7;
+    margin-right: 10px;
+}
+
+.header_logo_box {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-list li {
+    margin-right: 20px;
+}
+
+.header-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header_logo {
+    width: 80px;
+}
+
+.main {
+    display: flex;
+}
+
+.main-content {
+    padding: 20px;
+    margin-left: 260px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 100%;
+}
+
+.main-content-image {
+    width: 100%;
+    box-shadow: 10px 10px 30px;
+    transition: transform 0.3s ease;
+}
+
+.main-content-image:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 40px;
+}
+
+aside ul {
+    margin-top: 102px;
+    border-right: 2px solid #ff6600;
+    padding: 0;
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2b2626;
+}
+
+aside ul li {
+    list-style: none;
+}
+
+aside ul a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    padding: 25px 0 25px 25px;
+}
+
+aside ul a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #e3e9f7;
+    border-radius: 40px 0 0 40px;
+    z-index: -1;
+    transition: all 300ms ease-in-out;
+}
+
+aside ul a:hover {
+    color: #2b2626;
+}
+
+aside ul a:hover:before {
+    width: 95%;
+}
+
+.logo {
+    width: 100px;
+    height: 125px;
+    overflow: hidden;
+    margin: 25px auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    border-top: 2px solid #ff6600;
+    justify-content: space-between;
+    background-color: #2b2626;
+    bottom: 0;
+    width: 85%;
+    height: 15vh;
+    padding: 20px 150px;
+}
+
+.footer-nested-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nested-list li {
+    margin: 10px 0;
+}
+
+.footer-nested-list h1 {
+    color: #ff6600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-nested-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-nested-list a:hover {
+    color: #ff6600;
+}
